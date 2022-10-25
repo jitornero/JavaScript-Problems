@@ -1,0 +1,19 @@
+Iterate Through All an Array's Items Using For Loops
+
+Si bien hay otra alternativa para poder resolver lo que piden (utilizando IndexOf en vez de iterar anidado con for i, for j) no entiendo porque no funciona el siguiente código. Hay un solo array que "no pasa".
+
+ // Only change code below this line
+for (let i =0;i< arr.length; i++){
+  for (let j=0;j< arr[i].length;j++){
+    if (arr[i][j]==elem){
+      newArr.splice(i); 
+    }
+
+  }
+}
+console.log(newArr)
+  // Only change code above this line
+  return newArr;
+}
+
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
